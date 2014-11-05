@@ -51,3 +51,8 @@ set autoindent
 set expandtab
 set softtabstop=2
 
+" Automaticly open tags file
+let FILETAG=expand("./tags")
+if filereadable(FILETAG)
+  set tags=tags
+endif
