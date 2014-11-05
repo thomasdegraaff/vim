@@ -1,0 +1,94 @@
+HELP
+-----------------------------------
+:help tab Open help in new tab.
+CTRL+] Follow link in help file.
+CTRL+t Go back in help file.
+
+TABS
+-----------------------------------
+gt Go to next tab
+
+NAVIGATING
+-----------------------------------
+f {char} Go to next occurance of character.
+F {char} Go to previous occurance of pcharacter.
+t {char} Go to position before next occurance of character.
+T {char} Go to position before previous occurance of character.
+w Go word forward.
+b Go word backward.
+]] Go section (function) forward.
+[[ Go sectino (function) backward.
+}} Go paragraph forward.
+{{ Go paragraph backward.
+[{ Go back to unclosed {.
+[( Go back to unclosed (.
+[* Go back to start of comment.
+]* Go forward to end of comment.
+
+SEARCH
+-----------------------------------
+/ Search forward using pattern.
+? Search backward using pattern.
+n Repeat last search forward.
+* Search forward using identifier (word) under cursor.
+# Search backward using identifier (word) under cursor.
+
+MARKS
+-----------------------------------
+m{char} Mark position.
+'{char} Go to position of mark.
+:marks Show active marks.
+
+BRACKETS, BRACES, IF THEN etc.
+-----------------------------------
+% Find the next bracket, brace, comment, if, and go to its match. 
+
+THE REST
+-----------------------------------
+. Repeat last command.
+z. Redraw current line in the middle of the screen.
+:r [file] Insert contents of file at cursor.
+D Delete till the end of the line.
+q{char} Record typed characters in register {char}.
+q Stop recording.
+
+SELECTIONS
+-----------------------------------
+{visual selection}J Join selected lines into one.
+"{char}y Yank selection into register.
+:reg Show content of registers.
+P Put register after cursor.
+R Enter replace mode (type over text).
+{visual selection}c Change selected text.
+
+CHANGING TEXT
+-----------------------------------
+cc Change line.
+C Change till the end of the line.
+{visual selection}u Lowercase selection.
+{visual selection}U Uppercase selection.
+
+BUFFERS AND WINDOWS
+-----------------------------------
+CTRL+w s Split window.
+CTRL+w q Quit window.
+:vsplit Vertically split window.
+CTRL+w w Change active window.
+:badd {file} Add file in new buffer.
+:bdel Delete buffer.
+:ls Show buffers.
+
+FOLDS
+-----------------------------------
+zo Open fold under the cursor.
+zO Open all folds under the cursor.
+zR Open all folds (make foldlevel max).
+zM Close all folds (make foldlevel 0).
+
+TAGS
+-----------------------------------
+CTRL+] Jump to tag under cursor.
+CTRL+w CTRL+] Jump to tag in split window.
+CTRL+t Go back.
+:tags Show tags jumped, and current position.
+:tag {tag} Jump to tag.
