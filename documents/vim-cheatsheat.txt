@@ -105,3 +105,11 @@ cst" Change surroundings from <p>...</p> to "...".
 ds" Delete surrounding ".
 VS<p class="important"> Visual line selection, and then set surroundings.
 
+CODE SNIFFER, PHP SYNTAX ETC.
+-----------------------------------
+:Php - check for syntax errors
+:Phpcs - run code sniffer
+:Phpmd - run mess detector (will ask for a rule XML file if not set)
+:Phpcc - show code coverage (will ask for a clover XML file if not set)
+
+

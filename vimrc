@@ -51,6 +51,7 @@ set sw=2
 set autoindent
 set expandtab
 set softtabstop=2
+let mapleader=","
 
 " Automaticly open tags file
 let FILETAG=expand("./tags")
@@ -61,3 +62,13 @@ endif
 "CtrlP
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlPTag'
+
+" Phpqa
+" Don't run messdetector on save (default = 1)
+ let g:phpqa_messdetector_autorun = 0
+"
+" " Don't run codesniffer on save (default = 1)
+ let g:phpqa_codesniffer_autorun = 0
+"
+" " Show code coverage on load (default = 0)
+" let g:phpqa_codecoverage_autorun = 1
