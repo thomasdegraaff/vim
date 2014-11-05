@@ -92,3 +92,8 @@ CTRL+w CTRL+] Jump to tag in split window.
 CTRL+t Go back.
 :tags Show tags jumped, and current position.
 :tag {tag} Jump to tag.
+
+COMMENTS
+-----------------------------------
+CTRL+b Insert comment.
+

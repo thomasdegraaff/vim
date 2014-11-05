@@ -22,7 +22,8 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-surround'
 " PIV php integration
 Bundle 'spf13/PIV'
-Bundle 'Shougo/unite.vim'
+" CtrlP
+Bundle 'kien/ctrlp.vim'
 
 
 
@@ -43,7 +44,7 @@ filetype plugin indent on    " required
 
 let g:phpqa_codesniffer_args = "--standard=Drupal"
 let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates"
-nnoremap <buffer> <C-p> :call pdv#DocumentCurrentLine()<CR>
+nnoremap <buffer> <C-b> :call pdv#DocumentCurrentLine()<CR>
 
 " Custom settings
 set sw=2
@@ -56,3 +57,7 @@ let FILETAG=expand("./tags")
 if filereadable(FILETAG)
   set tags=tags
 endif
+
+"CtrlP
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlPTag'
