@@ -97,3 +97,11 @@ COMMENTS
 -----------------------------------
 CTRL+b Insert comment.
 
+SURROUND
+-----------------------------------
+cs'" Change surroundings from ' to ".
+cs'<p> Change surroundings from '...' to <p>...</p>.
+cst" Change surroundings from <p>...</p> to "...".
+ds" Delete surrounding ".
+VS<p class="important"> Visual line selection, and then set surroundings.
+
