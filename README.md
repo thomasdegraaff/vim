@@ -6,6 +6,9 @@ $ sudo pear channel-discover pear.pdepend.org
 $ sudo pear install --alldeps phpmd/PHP_PMD
 $ pear install PHP_CodeSniffer
 
+Installeer ctags:
+$ sudo apt-get install ctags
+
 Install Drupal coding standards for php codesniffer:
 $ cd ~ && wget http://ftp.drupal.org/files/projects/coder-7.x-2.2.tar.gz && tar -xzvf coder-7.x-2.2.tar.gz
 $ sudo cp -r ~/coder/coder_sniffer/Drupal /usr/share/php/PHP/CodeSniffer/Standards/
